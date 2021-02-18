@@ -9,6 +9,9 @@ public class ArrayUtils {
 	public static int[][] transposeMatrix(int[][] m)
 	{
 		//TODO
+		if(m.length==1 &&m[0].length==0) {
+			return m;
+		}
 		int[][] transpose= new int [m[0].length][m.length];
 		for(int i=0;i<m.length;i++) {
 			for(int j=0;j<m[0].length;j++) {
