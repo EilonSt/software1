@@ -46,7 +46,12 @@ public class StringUtils {
 					index=i+1;
 				}
 			}
-			else cnt=0;
+			else {
+				cnt=0;
+				if(max==0) {
+					index++;
+					}
+				}
 			
 		}
 		String longestString=words[index-max];
